@@ -12,7 +12,6 @@ for (let i in questions) {
 <input id="${i.id}" type="text">
 <br>
     `
-    form.removeChild(i)
-    form.appendChild(clone)
+    form.replaceChild(clone, i)
     console.debug('Successfully updated element: ', i)
 }
