@@ -1,7 +1,7 @@
 console.debug("Successfully loaded public.js...")
 
 const form = document.querySelector('form')
-const questions = document.querySelectorAll('question');
+const questions = document.querySelectorAll('span');
 console.debug(questions)
 
 for (let i in questions) {
