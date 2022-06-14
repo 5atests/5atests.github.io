@@ -1,5 +1,6 @@
-const questions = document.querySelectorAll('question');
+console.log("Successfully loaded public.js...")
 
+const questions = document.querySelectorAll('question');
 console.debug(questions)
 
 for (let i in questions) {
