@@ -1,4 +1,4 @@
-const questions = document.querySelectorAll('questions');
+const questions = document.querySelectorAll('question');
 
 console.debug(questions)
 
