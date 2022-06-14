@@ -6,8 +6,7 @@ console.debug(questions)
 
 for (let i of questions) {
     console.debug('Setting up question...', typeof i)
-    let clone = structuredClone(i);
-    clone.innerHTML = `
+    i.innerHTML = `
 <h3>${i.innerText}</h3><br>
 <input id="${i.id}" type="text">
 <br>
