@@ -4,7 +4,7 @@ const form = document.querySelector('form')
 const questions = document.querySelectorAll('span');
 console.debug(questions)
 
-for (let i in questions) {
+for (let i of questions) {
     console.debug('Setting up question...', typeof i)
     let clone = structuredClone(i);
     clone.innerHTML = `
