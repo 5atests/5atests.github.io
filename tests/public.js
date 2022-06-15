@@ -1,16 +1,13 @@
 console.debug("Successfully loaded public.js...")
-
-const form = document.querySelector('form')
 const questions = document.querySelectorAll('span');
 console.debug(questions)
 
 for (let i of questions) {
     console.debug('Setting up question...', typeof i)
     i.innerHTML = `
-<h3>${i.innerText}</h3><br>
-<input id="${i.id}" type="text">
+<h3>${i.innerText}</h3>
+<input name="${i.id}" id="${i.id}" type="text">
 <br>
     `
-    form.replaceWith(clone)
     console.debug('Successfully updated element: ', i)
 }
